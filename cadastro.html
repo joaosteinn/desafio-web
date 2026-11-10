@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro - Cuidado em Saúde</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body data-acesso="visitante">
+
+  <header>
+    <div class="container topo">
+      <div class="tituloelogo">
+        <img src="Imagens/Logo VivaBem Simples.png" alt="Logo da instituição" class="logo">
+        <a href="index.html" class="nome">VivaBem — Centro de Cuidado Integral</a>
+      </div>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="login.html" data-mostrar="visitante">Entrar</a>
+        <a href="cadastro.html" class="ativo" data-mostrar="visitante">Cadastrar</a>
+        <a href="agendar.html" data-mostrar="logado">Agendar consulta</a>
+        <a href="consultas.html" data-mostrar="logado">Minhas consultas</a>
+        <a href="feedback.html" data-mostrar="logado">Feedback</a>
+        <button id="botao-sair" data-mostrar="logado">Sair</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Cadastro</h1>
+
+    <form id="form-cadastro" class="formulario">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome">
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email">
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" placeholder="(51) 99999-9999">
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha">
+      <p class="dica">Mínimo de 6 caracteres.</p>
+
+      <label for="senha2">Confirmar senha</label>
+      <input type="password" id="senha2">
+
+      <p class="mensagem" id="mensagem"></p>
+      <button type="submit" class="botao">Criar conta</button>
+    </form>
+
+    <p>Já tem conta? <a href="login.html">Entrar</a></p>
+  </main>
+
+  <footer>
+    <div class="container">
+      Instituição fictícia criada para um trabalho acadêmico.
+    </div>
+  </footer>
+
+  <script src="js/db.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

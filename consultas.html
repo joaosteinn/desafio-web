@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minhas consultas - Cuidado em Saúde</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/consultas.css">
+</head>
+<body data-acesso="login">
+
+  <header>
+    <div class="container topo">
+      <div class="tituloelogo">
+        <img src="Imagens/Logo VivaBem Simples.png" alt="Logo da instituição" class="logo">
+        <a href="index.html" class="nome">VivaBem — Centro de Cuidado Integral</a>
+      </div>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="login.html" data-mostrar="visitante">Entrar</a>
+        <a href="cadastro.html" data-mostrar="visitante">Cadastrar</a>
+        <a href="agendar.html" data-mostrar="logado">Agendar consulta</a>
+        <a href="consultas.html" class="ativo" data-mostrar="logado">Minhas consultas</a>
+        <a href="feedback.html" data-mostrar="logado">Feedback</a>
+        <button id="botao-sair" data-mostrar="logado">Sair</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Minhas consultas</h1>
+    <p class="mensagem ok" id="mensagem"></p>
+
+    <h2>Agendadas</h2>
+    <div id="lista-agendadas"></div>
+
+    <h2>Realizadas</h2>
+    <div id="lista-realizadas"></div>
+  </main>
+
+  <footer>
+    <div class="container">
+      Instituição fictícia criada para um trabalho acadêmico.
+    </div>
+  </footer>
+
+  <script src="js/db.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/consultas.js"></script>
+</body>
+</html>

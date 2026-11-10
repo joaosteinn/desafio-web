@@ -1,0 +1,8 @@
+/* feedback.css - página de feedback */
+
+.notas label { display: inline-block; margin-right: 12px; font-weight: normal; }
+.notas input { width: auto; }
+
+.opiniao { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 12px 16px; margin-bottom: 12px; }
+.opiniao p { margin: 3px 0; }
+.opiniao .autor { font-weight: bold; }

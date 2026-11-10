@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendar consulta - Cuidado em Saúde</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/agendar.css">
+</head>
+<body data-acesso="login">
+
+  <header>
+    <div class="container topo">
+      <div class="tituloelogo">
+        <img src="Imagens/Logo VivaBem Simples.png" alt="Logo da instituição" class="logo">
+        <a href="index.html" class="nome">VivaBem — Centro de Cuidado Integral</a>
+      </div>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="login.html" data-mostrar="visitante">Entrar</a>
+        <a href="cadastro.html" data-mostrar="visitante">Cadastrar</a>
+        <a href="agendar.html" class="ativo" data-mostrar="logado">Agendar consulta</a>
+        <a href="consultas.html" data-mostrar="logado">Minhas consultas</a>
+        <a href="feedback.html" data-mostrar="logado">Feedback</a>
+        <button id="botao-sair" data-mostrar="logado">Sair</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Agendar consulta</h1>
+
+    <form id="form-agendar" class="formulario">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome">
+
+      <label for="contato">Contato (telefone ou e-mail)</label>
+      <input type="text" id="contato">
+
+      <label for="especialidade">Especialidade</label>
+      <select id="especialidade">
+        <option value="">Selecione</option>
+        <option>Clínica geral</option>
+        <option>Cardiologia</option>
+        <option>Dermatologia</option>
+        <option>Ginecologia</option>
+        <option>Nutrição</option>
+        <option>Ortopedia</option>
+        <option>Pediatria</option>
+        <option>Psicologia</option>
+      </select>
+
+      <label for="data">Data</label>
+      <input type="date" id="data">
+
+      <label for="horario">Horário</label>
+      <select id="horario">
+        <option value="">Selecione</option>
+        <option>08:00</option>
+        <option>09:00</option>
+        <option>10:00</option>
+        <option>11:00</option>
+        <option>14:00</option>
+        <option>15:00</option>
+        <option>16:00</option>
+        <option>17:00</option>
+      </select>
+
+      <label for="observacoes">Observações (opcional)</label>
+      <textarea id="observacoes" rows="3"></textarea>
+
+      <p class="mensagem" id="mensagem"></p>
+      <button type="submit" class="botao">Confirmar agendamento</button>
+    </form>
+
+    <!-- Aparece depois que a consulta é agendada -->
+    <div id="confirmacao" class="confirmacao" style="display: none;">
+      <h2>Consulta agendada com sucesso</h2>
+      <div id="resumo"></div>
+      <a class="botao" href="consultas.html">Ver minhas consultas</a>
+      <button type="button" class="botao botao-claro" id="botao-outra">Agendar outra</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      Instituição fictícia criada para um trabalho acadêmico.
+    </div>
+  </footer>
+
+  <script src="js/db.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/agendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback - Cuidado em Saúde</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body data-acesso="login">
+
+  <header>
+    <div class="container topo">
+      <div class="tituloelogo">
+        <img src="Imagens/Logo VivaBem Simples.png" alt="Logo da instituição" class="logo">
+        <a href="index.html" class="nome">VivaBem — Centro de Cuidado Integral</a>
+      </div>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="login.html" data-mostrar="visitante">Entrar</a>
+        <a href="cadastro.html" data-mostrar="visitante">Cadastrar</a>
+        <a href="agendar.html" data-mostrar="logado">Agendar consulta</a>
+        <a href="consultas.html" data-mostrar="logado">Minhas consultas</a>
+        <a href="feedback.html" class="ativo" data-mostrar="logado">Feedback</a>
+        <button id="botao-sair" data-mostrar="logado">Sair</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Feedback</h1>
+    <p>Conte como foi o seu atendimento. Sua opinião ajuda a melhorar o cuidado com todos.</p>
+
+    <form id="form-feedback" class="formulario">
+      <label>Nota (1 = muito insatisfeito, 5 = muito satisfeito)</label>
+      <div class="notas">
+        <label><input type="radio" name="nota" value="1"> 1</label>
+        <label><input type="radio" name="nota" value="2"> 2</label>
+        <label><input type="radio" name="nota" value="3"> 3</label>
+        <label><input type="radio" name="nota" value="4"> 4</label>
+        <label><input type="radio" name="nota" value="5"> 5</label>
+      </div>
+
+      <label for="comentario">Comentário</label>
+      <textarea id="comentario" rows="4"></textarea>
+
+      <p class="mensagem" id="mensagem"></p>
+      <button type="submit" class="botao">Enviar feedback</button>
+    </form>
+
+    <h2>Opiniões dos usuários</h2>
+    <div id="lista-feedbacks"></div>
+  </main>
+
+  <footer>
+    <div class="container">
+      Instituição fictícia criada para um trabalho acadêmico.
+    </div>
+  </footer>
+
+  <script src="js/db.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>

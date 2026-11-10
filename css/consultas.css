@@ -1,0 +1,9 @@
+/* consultas.css - página de consultas */
+
+.consulta { background: #fff; border: 1px solid #ddd; border-left: 5px solid #2e8b57; border-radius: 6px; padding: 12px 16px; margin-bottom: 12px; }
+.consulta.realizada { border-left-color: #999; }
+.consulta h3 { margin: 0 0 5px; }
+.consulta p { margin: 3px 0; }
+
+.botao-cancelar { background: #fff; color: #b00020; border: 1px solid #b00020; padding: 6px 12px; border-radius: 5px; cursor: pointer; margin-top: 8px; }
+.botao-cancelar:hover { background: #b00020; color: #fff; }

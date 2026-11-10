@@ -1,0 +1,7 @@
+/* home.css - página inicial */
+
+.abertura { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 30px; margin: 25px 0; }
+.abertura .botao { margin-right: 8px; }
+
+section { margin: 30px 0; }
+.fonte { font-size: 14px; color: #666; }
