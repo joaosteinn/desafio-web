@@ -19,7 +19,7 @@ main {
   width: 100%;
 }
 
-.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.container {max-width: 1000px; margin: 0 auto; padding: 0 20px; }
 
 h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; color: #1f5c3f; }
 a { color: #2e8b57; }
@@ -80,4 +80,4 @@ input, select, textarea {
 
 .voltar { margin-top: 20px; }
 
-footer { display: flex; align-items: center; border-top: 1px solid #ddd; margin-top: 40px; padding: 20px 0; font-size: 14px; color: #555; }
+footer { display: flex; align-items: center; text-align: center; border-top: 1px solid #ddd; margin-top: 40px; padding: 20px 0; font-size: 14px; color: #555; }
