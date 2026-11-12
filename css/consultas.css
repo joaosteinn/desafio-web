@@ -5,5 +5,17 @@
 .consulta h3 { margin: 0 0 5px; }
 .consulta p { margin: 3px 0; }
 
-.botao-cancelar { background: #fff; color: #b00020; border: 1px solid #b00020; padding: 6px 12px; border-radius: 5px; cursor: pointer; margin-top: 8px; }
+.botao-cancelar {
+  background: #fff;
+  color: #b00020;
+  border: 2px solid #b00020;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, color 0.2s;
+}
 .botao-cancelar:hover { background: #b00020; color: #fff; }

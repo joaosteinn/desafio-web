@@ -3,7 +3,7 @@
 * { box-sizing: border-box; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Public Sans', Arial, Helvetica, sans-serif;
   margin: 0;
   color: #222;
   background: #f5f8f6;
@@ -21,7 +21,7 @@ main {
 
 .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
 
-h1, h2, h3 { color: #1f5c3f; }
+h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; color: #1f5c3f; }
 a { color: #2e8b57; }
 
 header { background: #fff; border-bottom: 1px solid #ddd; }
@@ -32,24 +32,46 @@ header { background: #fff; border-bottom: 1px solid #ddd; }
 
 nav a, nav button {
   color: #222; text-decoration: none; margin-left: 15px;
-  background: none; border: none; font-size: 16px; font-family: Arial, Helvetica, sans-serif; cursor: pointer;
+  background: none; border: none; font-size: 16px; font-family: inherit; cursor: pointer;
 }
 nav a:hover, nav button:hover { text-decoration: underline; }
 nav a.ativo { color: #2e8b57; font-weight: bold; }
 
+nav button { border: 2px solid #2e8b57; color: #2e8b57; padding: 5px 14px; border-radius: 8px; font-weight: 600; transition: background 0.2s, color 0.2s; }
+nav button:hover { background: #2e8b57; color: #fff; text-decoration: none; }
+
 .botao {
-  display: inline-block; background: #2e8b57; color: #fff; border: none;
-  padding: 10px 18px; border-radius: 5px; font-size: 16px; text-decoration: none; cursor: pointer;
+  display: inline-block;
+  background: #2e8b57;
+  color: #fff;
+  border: 2px solid #2e8b57;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(46, 139, 87, 0.3);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
-.botao:hover { background: #226b43; }
-.botao-claro { background: #fff; color: #2e8b57; border: 1px solid #2e8b57; }
-.botao-claro:hover { background: #e8f3ed; }
+.botao:hover {
+  background: #226b43;
+  border-color: #226b43;
+  transform: translateY(-2px);   /* o botão sobe um pouco */
+  box-shadow: 0 5px 12px rgba(46, 139, 87, 0.35);
+}
+.botao:active { transform: translateY(0); box-shadow: none; }  /* ao clicar, ele "afunda" */
+.botao:focus-visible { outline: 3px solid #f0c04a; outline-offset: 2px; }
+
+.botao-claro { background: #fff; color: #2e8b57; box-shadow: none; }
+.botao-claro:hover { background: #e8f3ed; color: #226b43; box-shadow: none; }
 
 .formulario { background: #fff; padding: 25px; border-radius: 8px; border: 1px solid #ddd; max-width: 500px; }
 label { display: block; margin-top: 12px; font-weight: bold; }
 input, select, textarea {
   width: 100%; padding: 8px; margin-top: 4px;
-  border: 1px solid #aaa; border-radius: 4px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #aaa; border-radius: 4px; font-size: 16px; font-family: inherit;
 }
 .formulario .botao { margin-top: 18px; }
 
