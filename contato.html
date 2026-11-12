@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato - Cuidado em Saúde</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+
+  <header>
+    <div class="container topo">
+      <div class="tituloelogo">
+        <img src="Imagens/Logo VivaBem Simples.png" alt="Logo da instituição" class="logo">
+        <a href="index.html" class="nome">VivaBem — Centro de Cuidado Integral</a>
+      </div>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="login.html" data-mostrar="visitante">Entrar</a>
+        <a href="cadastro.html" data-mostrar="visitante">Cadastrar</a>
+        <a href="agendar.html" data-mostrar="logado">Agendar consulta</a>
+        <a href="consultas.html" data-mostrar="logado">Minhas consultas</a>
+        <a href="feedback.html" data-mostrar="logado">Feedback</a>
+        <a href="contato.html" class="ativo">Contato</a>
+        <button id="botao-sair" data-mostrar="logado">Sair</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contato</h1>
+    <p>Tem alguma dúvida ou sugestão? Fale com a gente pelos dados abaixo ou envie uma mensagem pelo formulário.</p>
+
+    <section class="informacoes">
+      <h2>Informações</h2>
+      <p><b>Endereço:</b> Rua Exemplo, 123 - Centro, Porto Alegre/RS</p>
+      <p><b>Telefone:</b> (51) 0000-0000</p>
+      <p><b>E-mail:</b> contato@vivabem.example</p>
+      <p><b>Horário de atendimento:</b> segunda a sexta, das 8h às 18h</p>
+      <p class="fonte">Dados fictícios, criados para um trabalho acadêmico.</p>
+    </section>
+
+    <h2>Envie uma mensagem</h2>
+
+    <form id="form-contato" class="formulario">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome">
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email">
+
+      <label for="assunto">Tipo de mensagem</label>
+      <select id="assunto">
+        <option value="">Selecione</option>
+        <option>Dúvida</option>
+        <option>Sugestão</option>
+        <option>Elogio</option>
+        <option>Reclamação</option>
+        <option>Solicitação</option>
+      </select>
+
+      <label for="texto">Mensagem</label>
+      <textarea id="texto" rows="4"></textarea>
+
+      <p class="mensagem" id="mensagem"></p>
+      <button type="submit" class="botao">Enviar mensagem</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      Instituição fictícia criada para um trabalho acadêmico.
+    </div>
+  </footer>
+
+  <script src="js/db.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/contato.js"></script>
+</body>
+</html>

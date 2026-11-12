@@ -6,6 +6,7 @@ var banco = {
   usuarios: [],    // cada usuário: { id, nome, email, telefone, senha }
   consultas: [],   // cada consulta: { id, idUsuario, nome, contato, especialidade, data, horario, observacoes }
   feedbacks: [],   // cada feedback: { id, autor, nota, comentario }
+  mensagens: [],   // cada mensagem: { id, nome, email, assunto, texto }
   idLogado: null   // id do usuário que está logado
 };
 
@@ -143,6 +144,13 @@ function listarFeedbacks() {
   return banco.feedbacks.slice().reverse();
 }
 
+// ---------- Mensagens de contato ----------
+
+function salvarMensagem(nome, email, assunto, texto) {
+  banco.mensagens.push({ id: novoId(), nome: nome, email: email, assunto: assunto, texto: texto });
+  salvar();
+}
+
 // ---------- Início ----------
 // Carrega o que já estava salvo; se não tinha nada, cria os dados de exemplo
 var salvo = localStorage.getItem(CHAVE);
@@ -151,4 +159,9 @@ if (salvo) {
 } else {
   criarDadosIniciais();
   salvar();
+}
+
+// Se os dados salvos são antigos e não têm a lista de mensagens, cria ela vazia
+if (banco.mensagens == undefined) {
+  banco.mensagens = [];
 }

@@ -1,0 +1,6 @@
+/* contato.css - página de contato */
+
+.informacoes { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px 25px; margin: 25px 0; max-width: 500px; }
+.informacoes h2 { margin-top: 0; }
+.informacoes p { margin: 6px 0; }
+.informacoes .fonte { font-size: 14px; color: #666; margin-top: 12px; }
